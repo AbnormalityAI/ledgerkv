@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="170" viewBox="0 0 1000 170" role="img" aria-label="ledgerkv write and recovery path">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect width="1000" height="170" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="30" y="34" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">ledgerkv write and recovery path</text>
+<rect x="30" y="60" width="156" height="85" rx="10" fill="#fff" stroke="#0f766e" stroke-width="2.5"/>
+<text x="108.0" y="95" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">Set / Del</text>
+<text x="108.0" y="120" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569">CRC-framed record</text>
+<line x1="190" y1="102" x2="222" y2="102" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+<rect x="226" y="60" width="156" height="85" rx="10" fill="#fff" stroke="#0f766e" stroke-width="2.5"/>
+<text x="304.0" y="95" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">Append-only log</text>
+<text x="304.0" y="120" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569">ledger.log</text>
+<line x1="386" y1="102" x2="418" y2="102" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+<rect x="422" y="60" width="156" height="85" rx="10" fill="#fff" stroke="#0f766e" stroke-width="2.5"/>
+<text x="500.0" y="95" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">In-memory map</text>
+<text x="500.0" y="120" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569">value + deadline</text>
+<line x1="582" y1="102" x2="614" y2="102" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+<rect x="618" y="60" width="156" height="85" rx="10" fill="#fff" stroke="#0f766e" stroke-width="2.5"/>
+<text x="696.0" y="95" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">Snapshot</text>
+<text x="696.0" y="120" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569">tmp, fsync, rename</text>
+<line x1="778" y1="102" x2="810" y2="102" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+<rect x="814" y="60" width="156" height="85" rx="10" fill="#fff" stroke="#0f766e" stroke-width="2.5"/>
+<text x="892.0" y="95" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">Recovery</text>
+<text x="892.0" y="120" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569">snapshot + log prefix</text>
+</svg>
