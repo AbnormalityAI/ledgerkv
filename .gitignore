@@ -1,0 +1,16 @@
+# binaries and build output
+/bin/
+/dist/
+*.exe
+*.test
+*.out
+# coverage
+coverage.txt
+*.prof
+# editors and OS
+.idea/
+.vscode/
+.DS_Store
+# local data
+.trigrep/
+ledger-data/
